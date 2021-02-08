@@ -6,6 +6,8 @@ module.exports = {
   usage: "key",
   description: "test key",
   run: async (client, message, args) => {
+    
+    if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("you may not do this")
   
     let time = ("1m")
   // Im make it 1 day because sometime your bot will restart
