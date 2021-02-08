@@ -10,6 +10,7 @@ client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
 client.queue = new Map();
 
+var timeofCreation, time, timeY, timeday, timeMo;
 
 
 const Categories = ["test", "key"]; //Commands => Category => Command
@@ -62,3 +63,32 @@ client.on("ready", () =>{
   })  
 });
 client.login("do you think i am dum?")
+
+/*
+-so use getTime function passing the variable of the key as a param
+-then use the expire function for the key
+-idk how to destroy the key so we r gonna have to figure that out 
+next
+*/
+
+function getTime(object){
+  //this is to get the time of creation
+  time = new Date();
+  timeday = time.getDate();
+  timeMo = time.getMonth();
+  timeY = time.getFullYear();
+
+  //this is to put it in MM/DD/YYYY format
+  timeofCreation = [keyMo,keyday,keyY]
+}
+
+function expire(object){
+  timeOfExpiration = new Date();
+  timeOfExpiration.setMonth(keyMo+1);
+
+  if(timeofCreation===timeOfExpiration){
+
+    //this is where u destroy the key 
+
+  }
+}
