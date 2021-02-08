@@ -61,4 +61,4 @@ client.on("ready", () =>{
     status: 'dnd' //You can show online, idle... Do not disturb is dnd
   })  
 });
-client.login("ODA4MzU5MDE4NjM1NTkxNzUw.YCFZAA.Pxci9Bo1p8EvAE_j2pWy_4TYwBk")
+client.login("do you think i am dum?")
