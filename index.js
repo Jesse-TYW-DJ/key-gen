@@ -86,7 +86,7 @@ function expire(object){
   timeOfExpiration = new Date();
   timeOfExpiration.setMonth(keyMo+1);
 
-  if(timeofCreation===timeOfExpiration){
+  if(timeofCreation>=timeOfExpiration){
 
     //this is where u destroy the key 
 
